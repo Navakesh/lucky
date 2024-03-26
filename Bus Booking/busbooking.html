@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <style>
+        .div-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 20vh; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="div-1">
+        <h1>Bus Booking</h1>
+        <div>
+            <label>Filter:</label>
+            <select class="one">
+                <option value="All">All</option>
+                <option value="Bus1">Bus1</option>
+                <option value="Bus2">Bus2</option>
+                <option value="Bus3">Bus3</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <form onsubmit="handleformSubmit(event)">
+            <label for="username">Name:</label>
+            <input type="text" id="username"><br><br>
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail"><br><br>
+            <label for="phone_num">Phone:</label>
+            <input type="tel"  id="phone_num"><br><br>
+            <label for="bus_num">Bus Number:</label>
+            <select id="bus_num">
+                <option value="Bus1">Bus 1</option>
+                <option value="Bus2">Bus 2</option>
+                <option value="Bus3">Bus 3</option>
+            </select><br><br>
+            <button type="submit">Book</button>
+        </form>
+        <ul></ul>
+    </div>
+</body>
+<script src="busbooking.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+</html>
